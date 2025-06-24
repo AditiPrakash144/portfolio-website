@@ -1,0 +1,549 @@
+/* Reset default spacing and box model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+   
+}
+
+/* Body styling */
+.body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#f9f9f9;
+    
+}
+
+/* Navbar styling */
+.navbar {
+    display:flex; /* Arrange items in a row */
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Vertically center everything */
+    padding: 20px 40px;
+    /*background-color: #fcc513;*/
+    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow under navbar */
+    position:sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Navigation links list */
+.nav-links {
+    list-style:none; /* Remove bullets */
+    display: flex;
+    gap: 30px; /* Space between links */
+}
+
+
+/* Link styles */
+.nav-links a {
+    display: flex;
+    
+    
+    text-decoration: none; /* Remove underline */
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.home-btn{
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: normal;
+    transition: background-color 0.3s ease;
+}
+
+.about-btn{
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: normal;
+    transition: background-color 0.3s ease;
+}
+.project-btn{
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: normal;
+    transition: background-color 0.3s ease;
+}
+.skills-btn{
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: normal;
+    transition: background-color 0.3s ease;
+}
+.contact-btn{
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: normal;
+    transition: background-color 0.3s ease;
+}
+/* Hover effect */
+.nav-links a:hover {
+    color: #f1e108; /* yellow on hover */
+}
+
+/* HERO section styling */
+.hero {
+    height: 100vh; /* Full screen height */
+    background-color: hwb(56 50% 0%);
+    /*background: linear-gradient(to right, #f0f4ff, #ffffff);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Hero text content */
+.hero-content h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 68px;
+    letter-spacing: 2px;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+/* Highlighted name */
+.hero-content h1 span {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+   /* color: #007BFF;*/
+    padding-bottom: 20px;
+}
+
+/* Subheading */
+.hero-content p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+}
+.logo i{
+    font-size:small;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+/* Button */
+.hero-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+}
+
+.hero-btn:hover {
+    background-color: #0056b3;
+}
+/* About section styling */
+.about {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/* Heading */
+.about h2 {
+    font-size: 36px;
+    color: #333;
+    
+    margin-top: 5px;
+}
+
+/* Paragraph */
+.about p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+/* Yellow label before section title */
+.section-label {
+    background-color: #fdbf06;
+    padding: 5px 15px;
+    color: #111;
+    font-weight:600;
+    display: inline-block;
+    margin-bottom: 50px;
+    border-radius: 3px;
+    font-size: large;
+}
+
+
+/* What I Do Section */
+.what-i-do {
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
+    letter-spacing:0.5px;
+    
+}
+
+.what-i-do h2 {
+    font-size: 35px;
+    margin-bottom: 90px;
+    color: #111;
+    font-weight: normal;
+    letter-spacing: 1px;
+
+}
+
+/* Card Container Layout */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    
+    
+}
+
+/* Individual Card */
+.card {
+    background-color: #ffffff;
+    border-radius: 4px;
+    border-style:initial;
+    border-color: black;
+    text-align: left;
+    padding: 15px;
+    width: 350px;
+    box-shadow: 5px 5px 15px 5px rgba(224, 219, 219, 0.993);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+.card i{
+    padding-bottom: 15px;
+}
+.card h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
+    color: #111;
+    font-weight: normal;
+    font-family:Arial, Helvetica, sans-serif, Geneva, Verdana, sans-serif
+}
+.card p {
+    font-size: 17.5px;
+    color: #111;
+    margin-bottom: 20px;
+    font-synthesis:weight;
+    font-size-adjust:inherit;
+    
+}
+
+/* Button on card */
+.card-btn {
+    display: inline-block;
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration:none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.card-btn:hover {
+    background-color: #007bff;
+}
+
+/* Resume Section */
+.projects h1{
+    font-size: xx-large;
+    font-weight: 300;
+    margin-bottom: 60px;
+}  
+.resume{
+    
+    padding: 80px 20px;
+    background: #fff;
+    text-align: center;
+  
+
+}
+.resume-card {
+  width: 45%;
+  background-color: #f9dd4a;
+  padding: 20px;
+  border-radius: 4px;
+  border-style:initial;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  margin: 20px;
+  text-align: left;
+ 
+}
+.resume-card:hover {
+  transform: translateY(-5px);
+}
+
+.left {
+  float: left;
+  clear: both;
+  padding: 20px;
+  
+}
+.left h3{
+    font-weight: 300;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.left h4{
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.right {
+  float: right;
+  clear: both;
+  
+}
+.right h3{
+    font-weight: 300;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.right h4{
+    font-weight: 300;
+    letter-spacing:0.5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+
+}
+.resume::after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+.org{
+    font-size: 19px;
+    color: #666;
+}
+
+.resume-card p {
+  font-size: 17px;
+
+  color: #222;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+  line-height: 1.5;
+}
+.ul{
+  font-family:Verdana, Geneva, Tahoma, sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  list-style: none;         /* Remove default bullets */
+  padding-left: 1.5em;
+  font-size: 15px;
+  
+}
+.li::before{
+  content:'•'; 
+  font-size: small; 
+  font-weight:lighter;           /* Custom bullet */
+  color: #333;
+  display: inline-block;
+  width: 1em;               /* Reserve space for bullet */
+  margin-left: -1.5em;      /* Position bullet to the left */
+  line-height: 1.6;
+  
+  
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .resume-card {
+    width: 90%;
+    align-self: center !important;
+  }
+}
+/* Skills Section */
+.skills {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #222;
+    
+}
+
+/* Container for all skills */
+.skills-container {
+    max-width: 900px;
+    margin: 0 auto;
+   /* display: flex;
+    flex-direction: column;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    
+}
+
+/* Skill box */
+.skill {
+    text-align: left;
+}
+
+/* Skill title line */
+.skill-title {
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+    
+}
+
+/* Outer bar */
+.skill-bar {
+    background-color: #e5e5e5;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Inner filled bar */
+.skill-fill {
+    height: 100%;
+    background-color: #f4c430; /* Yellow fill */
+    border-radius: 10px;
+}
+
+.contact-item i {
+    color: #f4c430;
+    font-size: 25px;
+    margin-right: 8px;
+}
+.contact-form button i {
+    margin-right: 8px;
+}
+
+
+.contact {
+  background-color: #f7df4f;
+  padding: 170px 140px;
+  
+}
+
+
+.contact h2 {
+  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  text-align: left;
+  font-size: 32px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.contact-container {
+  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 2px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  font-size: 20px;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  gap: 20px;
+  line-height: 1.5;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #333;
+
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  
+}
+
+.contact-form input,
+.contact-form textarea {
+  
+  width: 100%;
+  padding: 12px;
+  margin:auto;
+  margin-bottom: 25px;
+  border-radius: 2px;
+  border: none;
+  font-size: 16px;
+ 
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
