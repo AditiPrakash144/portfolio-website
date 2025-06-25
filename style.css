@@ -53,6 +53,9 @@
     font-size: 16px;
     transition: color 0.3s ease;
 }
+/*.nav-links i {
+    letter-spacing: 10px;
+}*/
 
 .home-btn{
     display: inline-block;
