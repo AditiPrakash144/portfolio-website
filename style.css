@@ -470,7 +470,11 @@
 
 .contact {
   background-color: #f7df4f;
-  padding: 170px 140px;
+  /*padding: 170px 140px;*/
+  /*padding: 150px 120px;*/
+  /*padding: 120px 90px;*/
+  padding: 110px 80px;
+
   
 }
 
@@ -547,6 +551,30 @@
   border-radius: 20px;
   font-size: 16px;
   cursor: pointer;
+}
+.footer {
+  background-color: #f7df4f;
+  color: #222;
+  text-align: center;
+  padding: 10px 5px;
+  margin-top: 70px;
+  font-size: 18px;
+}
+
+.footer-icons {
+  margin-top: 35px;
+}
+
+.footer-icons a {
+  color: #222;
+  margin: 0 10px;
+  font-size: 13px;
+  transition: color 0.3s;
+}
+
+.footer-icons a:hover {
+  /*color: #f7df4f;*/ 
+  transform: translateY(-5px);
 }
 
 
